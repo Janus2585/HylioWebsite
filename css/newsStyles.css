@@ -1,0 +1,38 @@
+.w3-navbar li {
+  
+  float:right!important;
+  
+}
+.w3-navbar{
+  font-family: "Lato", sans-serif;
+}
+
+.headerMarginRight{
+  margin-right: 30px;
+}
+.icon img{
+  float: left;
+  margin-left: 30px;
+}
+
+.pageContent{
+	max-width: 1200px;
+	margin: auto;
+	padding-top: 47.2px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-size: 20px;
+}
+
+.homepagePicture img{
+	width: 100%;
+}
+.dateAndTopic{
+	font-style: italic;
+}
+
+.clearer{
+	clear: both;
+}
+

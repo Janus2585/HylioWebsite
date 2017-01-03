@@ -1,0 +1,117 @@
+/* NAVBAR CSS*/
+.w3-navbar li {
+  
+  float:right!important;
+  
+}
+.w3-navbar{
+  font-family: "Lato", sans-serif;
+}
+
+.headerMarginRight{
+  margin-right: 30px;
+}
+.icon img{
+  float: left;
+  margin-left: 30px;
+}
+
+/*PAGECONTENT CSS*/
+
+
+.pageContent{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.photoAndInfo{
+  content: "";
+    clear: both;
+    display: table;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.w3-section img {
+	width: 100%;
+}
+.pegasusPhotos{
+	width: 48%;
+	float: left;
+	display:block;
+  margin-top: 20px;
+}
+
+.galleryPadding img{
+  padding-left: 10px;
+  padding-right:10px;
+}
+
+.pegasusName h1{
+  font-size: 40px;
+}
+.preorderButton{
+
+}
+
+
+.preorderButton button {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 2px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.preorderButton button:hover {
+  background: #000000;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.5s ease 0s;
+}
+
+.pegasusInfo{
+	width: 48%;
+	float: right;
+  font-size: 16px;
+}
+
+.pageContent{
+	/*margin top to make space for the header menu*/
+	margin-top: 46.4px;
+}
+
+.pegasusVideos iframe{
+	margin: auto;
+    width: 100%;
+}
+
+.pegasusVideos{
+	height: 100%;
+}
+
+
+.imageContainer img{
+	width: 50%;
+	float: left;
+}
+
+.imageContainer{
+
+}
+
+.footer{
+  margin-top: 20px;
+}
+
+/* allows the elements to stop floating so their container divs have a height*/
+.clearer{
+  clear: both;
+}
+
