@@ -87,7 +87,7 @@ header h1 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 1.7rem;
 }
 @media only screen and (min-width: 1024px) {
   header {
@@ -96,7 +96,7 @@ header h1 {
   }
   header h1 {
     font-size: 36px;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-weight: 300;
   }
 }

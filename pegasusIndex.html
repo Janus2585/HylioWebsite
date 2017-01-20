@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Hylio | Pegasus</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/pegasusStyles.css">
+	<link rel="stylesheet" href="css/w3.css">
 </head>
 <style>
 .mySlides {display:none}
@@ -53,9 +54,9 @@
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <ul class="w3-navbar w3-left-align w3-black">
-    <li><a class="w3-padding-large" href="#band">PEGASUS</a></li>
-    <li><a class="w3-padding-large" href="#tour">NEWS</a></li>
-    <li><a class="w3-padding-large" href="#contact">ENTERPRISE</a></li>
+    <li><a class="w3-padding-large" href="pegasusIndex.html">PEGASUS</a></li>
+    <li><a class="w3-padding-large" href="newsIndex.html">NEWS</a></li>
+    <li><a class="w3-padding-large" href="enterpriseIndex.html">ENTERPRISE</a></li>
     <li><a class="w3-padding-large" href="#">PRE-ORDER</a></li>
   </ul>
 </div>
@@ -69,7 +70,7 @@
   					  <img class="mySlides" src="img/blackBackground2.jpg" style="width:100%">
   					  <img class="mySlides" src="img/blackBackground3.jpg" style="width:100%">	
 				</div>
-				<div class="w3-section galleryMargin12 galleryPadding">
+				<div class="w3-section galleryMargin12 galleryPadding hide600px">
 				    <div class="w3-col s3">
 				      <img class="demo w3-opacity " 
 				      src="img/ZilkerPark.jpg" onclick="currentDiv(1)">
@@ -116,22 +117,29 @@
 
 
 		<div class="pegasusVideos">
-			<iframe width="1280" height="720" src="https://www.youtube.com/embed/gv_TMS1U8GA" frameborder="0" allowfullscreen></iframe>
-			<iframe width="1280" height="720" src="https://www.youtube.com/embed/LblFToClJGU" frameborder="0" allowfullscreen></iframe>
+			<div class="videoWrapper">
+			    <!-- Copy & Pasted from YouTube -->
+			    <iframe src="https://www.youtube.com/embed/gv_TMS1U8GA" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="videoWrapper">
+			    <iframe width="100%" src="https://www.youtube.com/embed/LblFToClJGU" frameborder="0" allowfullscreen></iframe>
+			</div>
+			
+			
 			<div class="clearer"></div>
 		</div>
 		<div class="features">
 			<div class="imageContainer">
-				<img src="img/CargoShot.jpg" alt="Cargo Shot">
 				<img src="img/feature_custom.jpg" alt="custom feature">
+				<img src="img/CargoShot.jpg" alt="Cargo Shot">
 			</div>
 			<div class="imageContainer">
 				<img src="img/feature_smartphone.jpg" alt="smartphone feature">
 				<img src="img/ui-mockup.jpg" alt="UI Mockup">
 			</div>
 			<div class="imageContainer">
-				<img src="img/ManualControl.jpg" alt="Manual Control">
 				<img src="img/feature_manual.jpg" alt="Manual Feature">
+				<img src="img/ManualControl.jpg" alt="Manual Control">
 			</div>
 			<div class="imageContainer">
 				<img src="img/feature_gps.jpg" alt="GPS feature">
@@ -160,8 +168,18 @@
         <br>
         
       </div>
+      
       <div class="w3-col m6">
-        <form action="form.asp" target="_blank">
+
+      	 <!--INSERT CONTACT <form> HERE
+
+      	-->
+
+
+
+
+
+        <form>
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
             <div class="w3-half">
               <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -173,6 +191,9 @@
           <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
           <button class="w3-btn w3-section w3-right" type="submit">SEND</button>
         </form>
+      
+        
+        
       </div>
     </div>
 		</div>

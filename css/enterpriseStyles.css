@@ -1,0 +1,142 @@
+
+/*NAVBAR*/
+.w3-navbar li {
+  
+  float:right!important;
+  
+}
+
+.headerMarginRight{
+  margin-right: 30px;
+}
+.icon img{
+  float: left;
+  margin-left: 30px;
+}
+
+.firstImageButton {
+    width: 33.3333%;
+    float: left;
+   }
+
+.w3-top:before{
+	content: "";
+    display: table;
+}
+.w3-top:after {
+	content: "";
+    display: table;
+	clear:both;
+}
+
+.slide1 img { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+.body {
+}
+/*
+.mainText{
+	margin: auto;
+	margin-top: 300px
+	;
+};
+*/
+.mainText{
+	width: 100%;
+	position: absolute; 
+    top: 200px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 150px;
+	overflow: hidden;
+}
+.textline1 p{
+    
+ 
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 70px;
+}
+
+div.textline1 p {
+  animation: slide-right 1.5s;
+}
+
+@keyframes slide-right{
+  from {
+    margin-left: -100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 850px){
+  .textline1 p{
+    font-size: 50px;
+    margin-top: 0px;
+  }
+  .maintext{
+    top: 100px;
+  }
+}
+
+/*text animation
+Credit for this animation goes to Paolo Manuel
+https://codepen.io/paolomonium/pen/gyemB
+
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
+
+
+.mainText h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 2.4em;
+  color: #2c3e50;
+}
+
+
+.letterDrop {
+  position: relative;
+  top: 0.60em;  
+  display: inline-block;
+  text-transform: uppercase; 
+  letter-spacing: 0.3em;
+  opacity: 0.8;
+  transform: rotateX(-90deg);
+  animation: letterDrop 1.2s ease 1 normal forwards;
+}
+
+@keyframes letterDrop {
+    10% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 0.8;
+        top: 3.75em;
+        transform: rotateX(-360deg);
+    }
+    100% {
+        opacity: 1;
+        top: 4.50em;
+        transform: rotateX(360deg);
+    }
+}
+
+
+span:nth-child(2n) {
+  color: #34495e; }
+
+span:nth-child(-n+4) {
+  color: #c0392b;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+}
+*/

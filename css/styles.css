@@ -12,6 +12,20 @@
   margin-left: 30px;
 }
 
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /*padding-bottom: 56.25%; /* 16:9 */ 
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .firstImageButton {
     width: 33.3333%;
     float: left;
@@ -108,14 +122,23 @@
 .imageText{
   color: #ffffff;
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  padding-bottom: 40px;
 }
 .movingImageStyle1{
   overflow: hidden;
 }
-.movingImageStyle1 img{
+
+@media only screen and (min-width: 851px) {
+  .movingImageStyle1 img{
     -webkit-animation: slowpan 20s linear 0s infinite alternate;
     overflow: hidden;
-
+  }
+  .mobileFrontPage{
+    display: none;
+  }
+  .frontPageButtons{
+    display: none;
+  }
 }
 @-webkit-keyframes slowpan {
  0% {
@@ -129,6 +152,124 @@
   
 }
 
+/*FOR SMALL SCREENS*/
+
+/*
+@media only screen and (min-width: 600px) and (max-width: 850px){
+      .icon img{
+      height: 100px!important;
+    }
+}
+*/
+@media only screen and (max-width: 430px){
+  .frontPageButton button{
+    font-size: 9px!important;
+  }
+}
+@media only screen and (max-width: 850px) {
+
+    .w3-navbar {
+
+    }
+    .smartphone{
+      display: none;
+    }
+    .pegasus{
+      display: none;
+    }
+    .desktopFirstImage{
+      display: none!important;
+    }
+    .firstImageButtons{
+      display: none;
+    }
+    .imageText{
+      font-size: 1.3vw;
+    }
+    .movingImageStyle1{
+        background: url(img/smartphone_crop1.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+    }
+
+    .movingImageStyle1{
+
+    }
+
+    .mobileFrontPage img{
+      width: 100%;
+    }
+
+    .textBox1 { 
+      position: absolute; 
+      top: 47vw; 
+      width: 100%; 
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .textBox1 p{
+      font-size: 2.5vw;
+    }
+
+    .textBox1 h3{
+      font-size: 4.8vw;
+    }
+
+    .frontPageButtons button{
+      display: inline-block;
+    border:none;
+    outline:none;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #1e597d);
+    background-image: -moz-linear-gradient(top, #3498db, #1e597d);
+    background-image: -ms-linear-gradient(top, #3498db, #1e597d);
+    background-image: -o-linear-gradient(top, #3498db, #1e597d);
+    background-image: linear-gradient(to bottom, #3498db, #1e597d);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-right: 0px;
+    margin-left: 0px;
+
+    transition: all 0.3s ease 0s;
+    }
+
+    .frontPageButtons button:hover{
+    background: transparent;
+    background-repeat:repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: #60efff;
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+    }
+
+    .frontPageButton {
+    width: 33.3333%;
+    float: left;
+    text-align: center;
+    }
+    .frontPageButtons{
+      overflow: auto;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+  .frontPageButtons button{
+    font-size: 14px;
+  }
+}
 .movingImageStyle2{
   overflow: hidden;
   
@@ -174,3 +315,4 @@
 .contactFooterTopMargin{
   margin-top: 20px;
 }
+

@@ -52,9 +52,9 @@ body {font-family: "Lato", sans-serif}
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <ul class="w3-navbar w3-left-align w3-black">
-    <li><a class="w3-padding-large" href="#band">PEGASUS</a></li>
-    <li><a class="w3-padding-large" href="#tour">NEWS</a></li>
-    <li><a class="w3-padding-large" href="#contact">ENTERPRISE</a></li>
+    <li><a class="w3-padding-large" href="pegasusIndex.html">PEGASUS</a></li>
+    <li><a class="w3-padding-large" href="newsIndex.html">NEWS</a></li>
+    <li><a class="w3-padding-large" href="enterpriseIndex.html">ENTERPRISE</a></li>
     <li><a class="w3-padding-large" href="#">PRE-ORDER</a></li>
   </ul>
 </div>
@@ -63,21 +63,30 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
+  <div class="mySlides w3-display-container w3-center desktopFirstImage">
+    
+    <!-- Original Image before the badass video was made
+    The image is replaced by the video
     <img src="img/Homepage.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-padding-32 w3-hide-small imageText">
+    -->
+    <div class = "videoWrapper">
+      <iframe src="https://www.youtube.com/embed/3yUZ7DoKE6c?autoplay=1&loop=1&playlist=3yUZ7DoKE6c&controls=0&showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="w3-display-bottommiddle w3-container imageText">
+
       <h3 class="w3-animate-left">DELIVERING THE FUTURE</h3>
       <p class="w3-animate-left">WITH AUTONOMOUS DRONE DELIVERY</p>
       <div class="firstImageButtons">
         <div class = "firstImageButton"><button type="button">WATCH VIDEO</button></div>
         <div class = "firstImageButton"><button type="button">SIGN-UP</button></div>
         <div class = "firstImageButton"><button type="button">PRE-ORDER</button></div>
+        <div class = "clearer"></div>
       </div>
     </div>
   </div>
 
   <!-- The smartphone section -->
-  <div class="w3-display-container w3-center movingImageStyle1">
+  <div class="w3-display-container w3-center movingImageStyle1 smartphone">
     <img src="img/smartphone.png" width:"100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>THE POWER OF DELIVERY: IN YOUR HANDS</h3>
@@ -86,7 +95,7 @@ body {font-family: "Lato", sans-serif}
   </div>
 
   <!-- Pegasus Section -->
-  <div class="w3-display-container w3-center movingImageStyle2">
+  <div class="w3-display-container w3-center movingImageStyle2 pegasus">
     <img src="img/pegasusKS2.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <p>WELCOME TO THE FUTURE OF DELIVERY</p>
@@ -94,6 +103,19 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
 
+  <!--For Small Screens below 850px width -->
+  <div class = "mobileFrontPage">
+    <img src="img/Mobile-Front-Page.jpg">
+    <div class="textBox1">
+      <h3 class="w3-animate-left">DELIVERING THE FUTURE</h3>
+      <p class="w3-animate-left">WITH AUTONOMOUS DRONE DELIVERY</p>
+    </div>
+  </div>
+  <div class = "frontPageButtons">
+    <div class = "frontPageButton"><button type="button">WATCH VIDEO</button></div>
+    <div class = "frontPageButton"><button type="button">SIGN-UP</button></div>
+    <div class = "frontPageButton"><button type="button">PRE-ORDER</button></div>
+  </div>
   <!-- The Contact Section -->
   <div class="w3-container w3-content" style="max-width:800px" id="contact">
     <h2 class="w3-wide w3-center">CONTACT</h2>
